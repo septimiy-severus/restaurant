@@ -1,0 +1,96 @@
+.header {
+
+    height: 121px;
+
+    &-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 32px 0;
+        background-color: $bg-dark;
+        z-index: 2;
+    }
+
+    &-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-logo {
+        width: 199px;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        gap: 270px;
+
+    }
+
+    .list {
+        display: flex;
+        gap: 32px;
+
+        .link {
+            @include opensans (16px, 28px, 400);
+            letter-spacing: 0.04em;
+            color: $color-white;
+        }
+    }
+
+    &-block {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        position: relative;
+    }
+
+    &-account {
+        width: 170px;
+        display: flex;
+        gap: 15px;
+
+        a {
+            @include opensans (16px, 28px, 600);
+            letter-spacing: 0.04em;
+            color: $color-white;
+            text-transform: capitalize;
+        }
+
+        .login {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: -8px;
+                top: 50%;
+                height: 15px;
+                width: 2px;
+                background: $bg-white;
+                transform: translateY(-50%) rotate(15deg);
+
+            }
+        }
+    }
+
+    &-book {
+        @include opensans (16px, 28px, 600);
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+        color: $color-white;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 3px;
+            height: 80px;
+            background: radial-gradient($color-white, $color-dark, transparent);
+            top: 50%;
+            right: 38%;
+            transform: translateY(-50%);
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@mixin cormorant ($fz, $lh, $fw) {
+    font-family: 'Cormorant Upright', serif;
+    font-size: $fz;
+    line-height: $lh;
+    font-weight: $fw;
+}
+
+@mixin opensans ($fz, $lh, $fw) {
+    font-family: 'Open Sans', sans-serif;
+    font-size: $fz;
+    line-height: $lh;
+    font-weight: $fw;
+}

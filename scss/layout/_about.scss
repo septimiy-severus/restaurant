@@ -1,0 +1,68 @@
+.about {
+    padding: 128px 0;
+    background: url(../images/about-bg.jpg) no-repeat center;
+    background-size: cover;
+
+    &-wrapper {
+        padding: 206px 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        background: url(../images/knife.png) no-repeat center,url(../images/g.png) no-repeat center;
+        background-size: contain, 391px; 
+    }
+
+    &-title {
+        text-align: right;
+        margin-bottom: 49px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 9px;
+            background: url(../images/spoon.svg) no-repeat center;
+            right: 0;
+            bottom: -17px;
+            transform: rotate(180deg);
+        }
+    }
+
+    &-content {
+        max-width: 523px;
+        width: 100%;
+    }
+
+    &-text {
+        text-align: right;
+        margin-bottom: 32px;
+    }
+
+    &-link {
+        width: 141px;
+        margin-left: auto;
+    }
+
+    &-reverse {
+
+        .about-title {
+            text-align: left;
+
+            &::after {
+                right: auto;
+                left: 0;
+                transform: rotate(0deg);
+            }
+        }
+
+        .about-text {
+            text-align: left;
+        }
+
+        .about-link {
+            margin-left: 0;
+        }
+    }
+    
+}

@@ -1,0 +1,35 @@
+.hero {
+    padding: 48px 0 244px;
+
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 180px;
+        flex-wrap: wrap;
+    }
+
+    &-content {
+        max-width: 453px;
+        width: 100%;
+    }
+
+    &-title {
+        font-size: 89px;
+        line-height: 117px;
+        text-transform: capitalize;
+        color: $color-secondary;
+        margin-bottom: 32px;
+    }
+
+    &-img {
+        max-width: 667px;
+        width: 100%;
+    }
+
+    .hero-link {
+        width: 157px;
+        margin-top: 32px;
+    }
+}
+

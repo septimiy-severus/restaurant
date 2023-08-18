@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
+
+@import "base/normalize";
+@import "utils/varibles";
+@import "utils/mixin";
+@import "base/base";
+
+@import "layout/header";
+@import "layout/hero";
+@import "layout/about";
+@import "layout/special";
+@import "layout/chief";
+@import "layout/video";
+@import "layout/award";
+@import "layout/footer";

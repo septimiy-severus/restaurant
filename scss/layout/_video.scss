@@ -1,0 +1,42 @@
+.video {
+    position: relative;
+
+    &.hidden::after {
+        opacity: 0;
+        z-index: -1;
+    }
+
+    &-block {
+        width: 100%;
+    }
+
+    .play-btn {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 120px;
+        width: 120px;
+        background: url(../images/play.svg) no-repeat center;
+        transition: .2s ease;
+
+        &.hidden {
+            z-index: -1;
+            opacity: 0;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: url(../images/preview.jpg) no-repeat center;
+        background-size: cover;
+        transition: .2s ease;
+    }
+}

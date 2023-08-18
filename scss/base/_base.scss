@@ -1,0 +1,61 @@
+body {
+    @include cormorant(16px, 1, 700);
+    background: $bg-dark;
+    color: $color-primary;
+    letter-spacing: 0.04em;
+}
+
+.container-lg {
+    max-width: 1680px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.inner-subtitle {
+    font-size: 23px;
+    line-height: 30px;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum'on, 'lnum'on;
+    color: $color-white;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 9px;
+        background: url(../images/spoon.svg) no-repeat center;
+        left: 0;
+        bottom: -17px;
+
+    }
+}
+
+.inner-text {
+    @include opensans (16px, 28px, 400);
+    color: $color-text;
+}
+
+.link-beige {
+    background: $bg-secondary;
+    text-align: center;
+    padding: 8px 0;
+    line-height: 28px;
+    color: $color-dark;
+    display: block;
+}
+
+.inner-title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 83px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: $color-secondary;
+}
