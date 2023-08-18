@@ -403,6 +403,21 @@ body {
   color: #DCCA87;
 }
 
+.btn-up {
+  position: fixed;
+  z-index: 2;
+  width: 32px;
+  height: 72px;
+  color: #DCCA87;
+  justify-content: center;
+  text-transform: uppercase;
+  bottom: 100px;
+  right: 50px;
+  display: flex;
+  align-items: flex-end;
+  background: url(../images/btn-up.svg) no-repeat center top;
+}
+
 .header {
   height: 121px;
 }
