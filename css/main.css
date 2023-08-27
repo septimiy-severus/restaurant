@@ -406,16 +406,16 @@ body {
 .btn-up {
   position: fixed;
   z-index: 2;
-  width: 32px;
+  width: 48px;
   height: 72px;
   color: #DCCA87;
-  justify-content: center;
   text-transform: uppercase;
   bottom: 100px;
   right: 50px;
-  display: flex;
-  align-items: flex-end;
-  background: url(../images/btn-up.svg) no-repeat center top;
+  background: #0C0B08 url(../images/btn-up.svg) no-repeat center top;
+  display: none;
+  padding-top: 57px;
+  border-radius: 20px;
 }
 
 .header {
