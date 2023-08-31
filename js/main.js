@@ -22,4 +22,11 @@ $(document).ready(function () {
         }, 800)
         return false;
     })
+
+    $(".gallery-slider").slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+    })
 });

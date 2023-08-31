@@ -32,8 +32,10 @@
 
     .slider-wrapper {
         width: 300px;
+        height: 441px;
         margin: 0 auto;
         position: relative;
+        cursor: pointer;
 
         &::after {
             content: "";

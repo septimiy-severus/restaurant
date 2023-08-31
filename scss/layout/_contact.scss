@@ -1,0 +1,34 @@
+.contact {
+    padding: 128px 0;
+    background: url(../images/about-bg.jpg) no-repeat center;
+    background-position: cover;
+
+    &-wrapper {
+        display: flex;
+        gap: 120px;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &-contact {
+        max-width: 513px;
+        width: 100%;
+    }
+
+    &-img {
+        max-width: 667px;
+        width: 100%;
+    }
+
+    &-title {
+        margin-top: 8px;
+    }
+
+    &-text {
+        margin: 64px 0 32px;
+    }
+
+    
+
+}
