@@ -29,6 +29,31 @@
         margin: 64px 0 32px;
     }
 
-    
+
+    .opening {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 64px;
+    }
+
+    .opening-title {
+        color: $color-secondary;
+        font-size: 23px;
+        line-height: 1.3;
+        letter-spacing: 0.92px;
+        text-transform: capitalize;
+        margin-bottom: 16px;
+    }
+
+    .opening-hours {
+        color: $color-white;
+        @include opensans (16px, 1.75, 400);
+        letter-spacing: 0.64px;
+    }
+
+    &-link {
+        width: 119px;
+    }
 
 }
