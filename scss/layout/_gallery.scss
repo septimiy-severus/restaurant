@@ -48,7 +48,7 @@
             z-index: -1;
             border: 2px solid rgba(220, 202, 135, 0.20);
             background: linear-gradient(230deg, rgba(0, 0, 0, 0.75) 8.77%, rgba(0, 0, 0, 0.64) 79.13%);
-            transition: .3s linear;
+            transition: $transition;
         }
 
         &:hover {
@@ -73,6 +73,6 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: -1;
-        transition: .3s linear;
+        transition: $transition;
     }
 }

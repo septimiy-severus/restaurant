@@ -540,6 +540,23 @@ main {
 .header-logo {
   width: 199px;
 }
+.header .burger {
+  display: none;
+}
+@media (max-width: 1300px) {
+  .header .burger {
+    display: block;
+    width: 65px;
+    height: 63px;
+    position: relative;
+    z-index: 5;
+    transition: 0.3s linear;
+    background: url(../images/burger.svg) no-repeat center;
+  }
+  .header .burger.active {
+    background: url(../images/burger-spoon.svg) no-repeat center;
+  }
+}
 .header .nav {
   display: flex;
   align-items: center;
@@ -548,19 +565,35 @@ main {
 @media (max-width: 1300px) {
   .header .nav {
     position: absolute;
-    height: 100vh;
+    height: 0;
     background: black;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: 2;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 85px;
+    overflow-y: hidden;
+    opacity: 0;
+    transition: 0.3s linear;
+  }
+  .header .nav.active {
+    height: 100vh;
+    opacity: 1;
+    overflow-y: visible;
   }
 }
 .header .list {
   display: flex;
   gap: 32px;
+}
+@media (max-width: 1300px) {
+  .header .list {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .header .list .link {
   font-family: "Open Sans", sans-serif;
@@ -570,16 +603,33 @@ main {
   letter-spacing: 0.04em;
   color: #fff;
 }
+@media (max-width: 1300px) {
+  .header .list .link {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
 .header-block {
   display: flex;
   align-items: center;
   gap: 100px;
   position: relative;
 }
+@media (max-width: 1300px) {
+  .header-block {
+    gap: 20px;
+    flex-direction: column;
+  }
+}
 .header-account {
   width: 170px;
   display: flex;
   gap: 15px;
+}
+@media (max-width: 1300px) {
+  .header-account {
+    width: auto;
+  }
 }
 .header-account a {
   font-family: "Open Sans", sans-serif;
@@ -589,6 +639,12 @@ main {
   letter-spacing: 0.04em;
   color: #fff;
   text-transform: capitalize;
+}
+@media (max-width: 1300px) {
+  .header-account a {
+    font-size: 28px;
+    line-height: 30px;
+  }
 }
 .header-account .login {
   position: relative;
@@ -603,6 +659,11 @@ main {
   background: #fff;
   transform: translateY(-50%) rotate(15deg);
 }
+@media (max-width: 1300px) {
+  .header-account .login::after {
+    height: 28px;
+  }
+}
 .header-book {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -611,6 +672,12 @@ main {
   letter-spacing: 0.05em;
   text-transform: capitalize;
   color: #fff;
+}
+@media (max-width: 1300px) {
+  .header-book {
+    font-size: 28px;
+    line-height: 30px;
+  }
 }
 .header-book::before {
   content: "";
@@ -621,6 +688,11 @@ main {
   top: 50%;
   right: 38%;
   transform: translateY(-50%);
+}
+@media (max-width: 768px) {
+  .header-book::before {
+    display: none;
+  }
 }
 
 .hero {
@@ -1156,7 +1228,7 @@ main {
 .footer {
   padding: 64px 0;
   background: url(../images/about-bg.jpg) no-repeat center;
-  background-position: cover;
+  background-size: cover;
 }
 .footer-wrapper {
   display: flex;

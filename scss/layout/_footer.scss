@@ -1,7 +1,7 @@
 .footer {
     padding: 64px 0;
     background: url(../images/about-bg.jpg) no-repeat center;
-    background-position: cover;
+    background-size: cover;
 
     &-wrapper {
         display: flex;
@@ -117,5 +117,5 @@
         @include opensans (16px, 1.75, 400);
         letter-spacing: 0.64px;
         margin-top: 80px;
-    }
+    } 
 }

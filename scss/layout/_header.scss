@@ -22,6 +22,24 @@
         width: 199px;
     }
 
+    .burger {
+        display: none;
+
+        @media(max-width: 1300px) {
+            display: block;
+            width: 65px;
+            height: 63px;
+            position: relative;
+            z-index: 5;
+            transition: $transition;
+            background: url(../images/burger.svg) no-repeat center;
+
+            &.active {
+                background: url(../images/burger-spoon.svg) no-repeat center;
+            }
+        }
+    }
+
     .nav {
         display: flex;
         align-items: center;
@@ -29,14 +47,25 @@
 
         @media(max-width: 1300px) {
             position: absolute;
-            height: 100vh;
+            height: 0;
             background: black;
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
             z-index: 2;
-            flex-direction: column;
+            flex-direction: column-reverse;
+            justify-content: center;
+            gap: 85px;
+            overflow-y: hidden;
+            opacity: 0;
+            transition: $transition;
+
+            &.active {
+                height: 100vh;
+                opacity: 1;
+                overflow-y: visible;
+            }
         }
     }
 
@@ -44,10 +73,20 @@
         display: flex;
         gap: 32px;
 
+        @media(max-width:1300px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
         .link {
             @include opensans (16px, 28px, 400);
             letter-spacing: 0.04em;
             color: $color-white;
+
+            @media(max-width:1300px) {
+                font-size: 35px;
+                line-height: 40px;
+            }
         }
     }
 
@@ -56,6 +95,11 @@
         align-items: center;
         gap: 100px;
         position: relative;
+
+        @media(max-width:1300px) {
+            gap: 20px;
+            flex-direction: column;
+        }
     }
 
     &-account {
@@ -63,11 +107,20 @@
         display: flex;
         gap: 15px;
 
+        @media(max-width:1300px) {
+            width: auto;
+        }
+
         a {
             @include opensans (16px, 28px, 600);
             letter-spacing: 0.04em;
             color: $color-white;
             text-transform: capitalize;
+
+            @media(max-width:1300px) {
+                font-size: 28px;
+                line-height: 30px;
+            }
         }
 
         .login {
@@ -83,6 +136,9 @@
                 background: $bg-white;
                 transform: translateY(-50%) rotate(15deg);
 
+                @media(max-width:1300px) {
+                    height: 28px;
+                }
             }
         }
     }
@@ -93,6 +149,11 @@
         text-transform: capitalize;
         color: $color-white;
 
+        @media(max-width:1300px) {
+            font-size: 28px;
+            line-height: 30px;
+        }
+
         &::before {
             content: "";
             position: absolute;
@@ -102,6 +163,10 @@
             top: 50%;
             right: 38%;
             transform: translateY(-50%);
+
+            @media(max-width:768px) {
+                display: none;
+            }
         }
     }
 }
