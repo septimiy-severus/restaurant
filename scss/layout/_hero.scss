@@ -20,6 +20,12 @@
         text-transform: capitalize;
         color: $color-secondary;
         margin-bottom: 32px;
+
+        @media(max-width: 450px) {
+            font-size: 60px;
+            line-height: 80px;
+            text-align: center;
+        }
     }
 
     &-img {
@@ -32,4 +38,3 @@
         margin-top: 32px;
     }
 }
-

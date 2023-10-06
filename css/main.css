@@ -460,6 +460,11 @@ main {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 1350px) {
+  .container {
+    padding: 0 10px;
+  }
+}
 
 .inner-subtitle {
   font-size: 23px;
@@ -486,6 +491,11 @@ main {
   font-weight: 400;
   color: #AAAAAA;
 }
+@media (max-width: 450px) {
+  .inner-text {
+    text-align: center;
+  }
+}
 
 .link-beige {
   background: #DCCA87;
@@ -494,6 +504,11 @@ main {
   line-height: 28px;
   color: #0C0B08;
   display: block;
+}
+@media (max-width: 450px) {
+  .link-beige {
+    margin: 0 auto;
+  }
 }
 
 .inner-title {
@@ -540,6 +555,11 @@ main {
 .header-logo {
   width: 199px;
 }
+@media (max-width: 390px) {
+  .header-logo {
+    width: 189px;
+  }
+}
 .header .burger {
   display: none;
 }
@@ -553,6 +573,14 @@ main {
     transition: 0.3s linear;
     background: url(../images/burger.svg) no-repeat center;
   }
+}
+@media (max-width: 1300px) and (max-width: 390px) {
+  .header .burger {
+    width: 55px;
+    height: 53px;
+  }
+}
+@media (max-width: 1300px) {
   .header .burger.active {
     background: url(../images/burger-spoon.svg) no-repeat center;
   }
@@ -715,6 +743,13 @@ main {
   text-transform: capitalize;
   color: #DCCA87;
   margin-bottom: 32px;
+}
+@media (max-width: 450px) {
+  .hero-title {
+    font-size: 60px;
+    line-height: 80px;
+    text-align: center;
+  }
 }
 .hero-img {
   max-width: 667px;
@@ -1234,8 +1269,28 @@ main {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 980px) {
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+}
 .footer-list {
   width: 306px;
+}
+@media (max-width: 980px) {
+  .footer-list {
+    order: 2;
+  }
+  .footer-list:last-of-type {
+    order: 1;
+  }
+}
+@media (max-width: 980px) {
+  .footer-block {
+    order: 3;
+  }
 }
 .footer-title {
   color: #F5EFDB;
@@ -1257,6 +1312,7 @@ main {
 }
 .footer-address {
   margin-bottom: 8px;
+  text-align: center;
 }
 .footer-number {
   color: #AAAAAA;
@@ -1276,6 +1332,11 @@ main {
   text-transform: uppercase;
   display: block;
   margin-bottom: 32px;
+}
+@media (max-width: 390px) {
+  .footer-logo {
+    font-size: 54px;
+  }
 }
 .footer-text {
   color: #fff;

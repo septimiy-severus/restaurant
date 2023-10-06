@@ -20,6 +20,10 @@
 
     &-logo {
         width: 199px;
+
+        @media(max-width: 390px) {
+            width: 189px;
+        }
     }
 
     .burger {
@@ -33,6 +37,12 @@
             z-index: 5;
             transition: $transition;
             background: url(../images/burger.svg) no-repeat center;
+
+
+            @media(max-width: 390px) {
+                width: 55px;
+                height: 53px;
+            }
 
             &.active {
                 background: url(../images/burger-spoon.svg) no-repeat center;

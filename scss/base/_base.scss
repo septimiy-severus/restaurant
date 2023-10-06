@@ -30,6 +30,10 @@ main {
     max-width: 1300px;
     width: 100%;
     margin: 0 auto;
+
+    @media(max-width:1350px) {
+        padding: 0 10px;
+    }
 }
 
 .inner-subtitle {
@@ -55,6 +59,10 @@ main {
 .inner-text {
     @include opensans (16px, 28px, 400);
     color: $color-text;
+
+    @media(max-width: 450px) {
+        text-align: center;
+     }
 }
 
 .link-beige {
@@ -64,6 +72,10 @@ main {
     line-height: 28px;
     color: $color-dark;
     display: block;
+
+    @media(max-width: 450px) {
+       margin: 0 auto;
+    }
 }
 
 .inner-title {

@@ -6,11 +6,30 @@
     &-wrapper {
         display: flex;
         justify-content: space-between;
-        // align-items: center;
+
+        @media(max-width: 980px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
     }
 
     &-list {
         width: 306px;
+
+        @media(max-width: 980px) {
+            order: 2;
+
+            &:last-of-type {
+                order: 1;
+            }
+        }
+    }
+
+    &-block {
+        @media(max-width: 980px) {
+            order: 3;
+        }
     }
 
     &-title {
@@ -32,6 +51,7 @@
 
     &-address {
         margin-bottom: 8px;
+        text-align: center;
     }
 
     &-number {
@@ -50,6 +70,11 @@
         text-transform: uppercase;
         display: block;
         margin-bottom: 32px;
+
+
+        @media(max-width: 390px) {
+        font-size: 54px;
+        }
     }
 
     &-text {
