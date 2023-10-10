@@ -423,7 +423,8 @@ ul {
   display: none;
 }
 
-html, body {
+html,
+body {
   min-height: 100vh;
 }
 
@@ -773,6 +774,13 @@ main {
   background: url(../images/knife.png) no-repeat center, url(../images/g.png) no-repeat center;
   background-size: contain, 391px;
 }
+@media (max-width: 980px) {
+  .about-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    background: transparent;
+  }
+}
 .about-title {
   text-align: right;
   margin-bottom: 49px;
@@ -788,6 +796,15 @@ main {
   bottom: -17px;
   transform: rotate(180deg);
 }
+@media (max-width: 450px) {
+  .about-title {
+    text-align: center;
+  }
+  .about-title::after {
+    right: 50%;
+    transform: rotate(180deg) translateX(-50%);
+  }
+}
 .about-content {
   max-width: 523px;
   width: 100%;
@@ -795,6 +812,11 @@ main {
 .about-text {
   text-align: right;
   margin-bottom: 32px;
+}
+@media (max-width: 450px) {
+  .about-text {
+    text-align: center;
+  }
 }
 .about-link {
   width: 141px;
@@ -808,11 +830,31 @@ main {
   left: 0;
   transform: rotate(0deg);
 }
+@media (max-width: 450px) {
+  .about-reverse .about-title {
+    text-align: center;
+  }
+  .about-reverse .about-title::after {
+    right: auto;
+    left: 50%;
+    transform: rotate(0deg) translateX(-50%);
+  }
+}
 .about-reverse .about-text {
   text-align: left;
 }
+@media (max-width: 450px) {
+  .about-reverse .about-text {
+    text-align: center;
+  }
+}
 .about-reverse .about-link {
   margin-left: 0;
+}
+@media (max-width: 450px) {
+  .about-reverse .about-link {
+    margin-left: auto;
+  }
 }
 
 .special {
