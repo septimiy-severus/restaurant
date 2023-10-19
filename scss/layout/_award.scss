@@ -5,6 +5,12 @@
     background-position: left 63px top 55px, center;
     background-size: auto, cover;
 
+    @media(max-width: 1100px) {
+        background-image: url(../images/about-bg.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
     &-wrapper {
         display: flex;
         align-items: center;
@@ -20,12 +26,17 @@
 
     &-title {
         margin: 8px 0 64px;
+
+        @media(max-width: 450px) {
+            text-align: center;
+        }
     }
 
     &-list {
         display: flex;
         flex-wrap: wrap;
         gap: 64px 32px;
+        justify-content: center;
     }
 
     &-item {

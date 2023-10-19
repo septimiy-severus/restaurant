@@ -6,6 +6,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         gap: 96px;
     }
 
@@ -21,6 +22,10 @@
 
     &-title {
         margin: 17px 0 64px;
+
+        @media(max-width: 450px) {
+            text-align: center;
+        }
     }
 
     &-text {
@@ -39,7 +44,11 @@
             height: 40px;
             top: -16px;
             left: 0;
-            background: url(../images/quotes.svg);
+            background: url(../images/quotes.svg) no-repeat center;
+
+            @media(max-width: 450px) {
+                background-size: 60%;
+            }
         }
     }
 

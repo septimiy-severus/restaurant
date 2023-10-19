@@ -6,6 +6,16 @@
         justify-content: space-between;
         background: url(../images/bg-special.jpg) no-repeat center;
         background-size: contain;
+
+        @media (max-width: 1250px) {
+            background: transparent;
+        }
+
+        @media (max-width: 980px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
     }
 
     &-subtitle {
@@ -65,13 +75,22 @@
             &::after {
                 content: "";
                 position: absolute;
-                width: 119px;
+                width: 100%;
+                max-width: 119px;
                 height: 1px;
                 background: #FAFAFA;
                 left: 55%;
                 top: 50%;
                 transform: translateY(-50%);
+
+                @media (max-width: 450px) {
+                    max-width: 50px;
+                    left: 75%;
+                }
+
             }
+
+
         }
 
         .price {
