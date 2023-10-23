@@ -4,17 +4,37 @@
 
     &-wrapper {
         display: flex;
-        gap: 64px;
+        gap: 44px;
+        align-items: center;
+
+        @media(max-width:1885px) {
+           flex-wrap: wrap; 
+           justify-content: center;
+        }
+    }
+
+    &-container {
+        max-width: 1920px;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 100px;
+
+        @media(max-width:1885px) {
+            padding: 0 10px;
+         }
     }
 
     &-content {
         max-width: 491px;
         width: 100%;
-        padding: 81px 0;
     }
 
     &-title {
         margin-top: 8px;
+
+        @media(max-width:450px) {
+            text-align: center;
+         }
     }
 
     &-text {

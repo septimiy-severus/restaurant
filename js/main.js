@@ -8,15 +8,15 @@ $(document).ready(function () {
     $(".video-block").trigger("pause")
 
     // up-arrow
-    $(window).scroll(function(){
-        if($(this).scrollTop()>200){
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
             $(".btn-up").fadeIn(800)
-        } else{
+        } else {
             $(".btn-up").fadeOut(800)
         }
     })
 
-    $(".btn-up").on("click", function(){
+    $(".btn-up").on("click", function () {
         $("body, html").animate({
             scrollTop: 0
         }, 800)
@@ -28,5 +28,34 @@ $(document).ready(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
+        responsive: [
+            {
+                breakpoint: 1296,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 981,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 650,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    infinite: true,
+                }
+            }
+        ]
     })
 });

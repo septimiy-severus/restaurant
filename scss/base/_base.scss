@@ -95,10 +95,12 @@ main {
     height: 72px;
     color: $color-secondary;
     text-transform: uppercase;
-    bottom: 100px;
-    right: 50px;
+    bottom: 50px;
+    right: 25px;
     background: $bg-dark url(../images/btn-up.svg) no-repeat center top;
     display: none;
     padding-top: 57px;
     border-radius: 20px;
+
+    
 }
