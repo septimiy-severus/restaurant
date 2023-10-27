@@ -530,10 +530,11 @@ main {
   text-transform: uppercase;
   bottom: 50px;
   right: 25px;
-  background: #0C0B08 url(../images/btn-up.svg) no-repeat center top;
+  background: rgba(30, 29, 27, 0.75) url(../images/btn-up.svg) no-repeat center top 7px;
   display: none;
-  padding-top: 57px;
-  border-radius: 20px;
+  padding-top: 60px;
+  padding-bottom: 25px;
+  border-radius: 30px;
 }
 
 .header {
@@ -765,6 +766,7 @@ main {
   padding: 128px 0;
   background: url(../images/about-bg.jpg) no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
 }
 .about-wrapper {
   padding: 206px 0;
@@ -973,6 +975,7 @@ main {
 .chief {
   background: url(../images/about-bg.jpg) no-repeat center;
   padding: 128px 0;
+  background-attachment: fixed;
 }
 .chief-wrapper {
   display: flex;
@@ -1091,6 +1094,7 @@ main {
   background-repeat: no-repeat;
   background-position: left 63px top 55px, center;
   background-size: auto, cover;
+  background-attachment: local, fixed;
 }
 @media (max-width: 1100px) {
   .award {
@@ -1267,7 +1271,8 @@ main {
 .contact {
   padding: 128px 0;
   background: url(../images/about-bg.jpg) no-repeat center;
-  background-position: cover;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .contact-wrapper {
   display: flex;
@@ -1287,6 +1292,11 @@ main {
 .contact-title {
   margin-top: 8px;
 }
+@media (max-width: 450px) {
+  .contact-title {
+    text-align: center;
+  }
+}
 .contact-text {
   margin: 64px 0 32px;
 }
@@ -1295,6 +1305,11 @@ main {
   flex-direction: column;
   gap: 16px;
   margin-bottom: 64px;
+}
+@media (max-width: 450px) {
+  .contact .opening {
+    text-align: center;
+  }
 }
 .contact .opening-title {
   color: #DCCA87;
@@ -1319,11 +1334,12 @@ main {
 .newsletter {
   padding: 80px 0;
   background: url(../images/about-bg.jpg) no-repeat center;
-  background-position: cover;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .newsletter-wrapper {
   background: #0C0B08;
-  padding: 63px 0;
+  padding: 63px 10px;
   border: 1px solid rgba(220, 202, 135, 0.2);
   box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7);
   display: flex;
@@ -1337,6 +1353,9 @@ main {
 .newsletter-subtitle::after {
   left: 50%;
   transform: translateX(-50%);
+}
+.newsletter-title {
+  text-align: center;
 }
 .newsletter-text {
   margin: 8px 0 64px 0;
@@ -1359,6 +1378,11 @@ main {
   letter-spacing: 0.64px;
   text-transform: capitalize;
 }
+@media (max-width: 590px) {
+  .newsletter-form {
+    flex-direction: column;
+  }
+}
 .newsletter-btn {
   width: 129px;
   padding: 8px 0;
@@ -1366,11 +1390,17 @@ main {
   letter-spacing: 0.64px;
   color: #0C0C0C;
 }
+@media (max-width: 590px) {
+  .newsletter-btn {
+    width: 100%;
+  }
+}
 
 .footer {
   padding: 64px 0;
   background: url(../images/about-bg.jpg) no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
 }
 .footer-wrapper {
   display: flex;

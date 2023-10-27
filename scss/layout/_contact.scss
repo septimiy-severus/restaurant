@@ -1,7 +1,8 @@
 .contact {
     padding: 128px 0;
     background: url(../images/about-bg.jpg) no-repeat center;
-    background-position: cover;
+    background-size: cover;
+    background-attachment: fixed;
 
     &-wrapper {
         display: flex;
@@ -23,6 +24,10 @@
 
     &-title {
         margin-top: 8px;
+
+        @media(max-width: 450px) {
+          text-align: center;
+        }
     }
 
     &-text {
@@ -35,6 +40,10 @@
         flex-direction: column;
         gap: 16px;
         margin-bottom: 64px;
+
+        @media(max-width: 450px) {
+            text-align: center;
+          }
     }
 
     .opening-title {

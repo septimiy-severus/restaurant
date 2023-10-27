@@ -4,6 +4,7 @@
     background-repeat: no-repeat; 
     background-position: left 63px top 55px, center;
     background-size: auto, cover;
+    background-attachment: local, fixed;
 
     @media(max-width: 1100px) {
         background-image: url(../images/about-bg.jpg);

@@ -1,6 +1,7 @@
 .chief {
     background: url(../images/about-bg.jpg) no-repeat center;
     padding: 128px 0;
+    background-attachment: fixed;
 
     &-wrapper {
         display: flex;

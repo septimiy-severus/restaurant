@@ -97,10 +97,10 @@ main {
     text-transform: uppercase;
     bottom: 50px;
     right: 25px;
-    background: $bg-dark url(../images/btn-up.svg) no-repeat center top;
+    background: rgba(30, 29, 27, 0.75) url(../images/btn-up.svg) no-repeat center top 7px;
     display: none;
-    padding-top: 57px;
-    border-radius: 20px;
-
-    
+    padding-top: 60px;
+    padding-bottom: 25px;
+    border-radius: 30px;
 }
+

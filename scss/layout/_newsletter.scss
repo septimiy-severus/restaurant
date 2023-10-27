@@ -1,11 +1,12 @@
 .newsletter {
     padding: 80px 0;
     background: url(../images/about-bg.jpg) no-repeat center;
-    background-position: cover;
+    background-size: cover;
+    background-attachment: fixed;
 
     &-wrapper {
         background: $bg-dark;
-        padding: 63px 0;
+        padding: 63px 10px;
         border: 1px solid rgba(220, 202, 135, 0.20);
         box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.70);
         display: flex;
@@ -21,6 +22,10 @@
             left: 50%;
             transform: translateX(-50%);
         }
+    }
+
+    &-title {
+        text-align: center;
     }
 
     &-text {
@@ -45,6 +50,10 @@
             letter-spacing: 0.64px;
             text-transform: capitalize;
         }
+
+        @media(max-width: 590px) {
+            flex-direction: column;
+        }
     }
 
     &-btn {
@@ -54,6 +63,9 @@
         letter-spacing: 0.64px;
         color: #0C0C0C;
 
+        @media(max-width: 590px) {
+            width: 100%;
+        }
     }
 
 }
